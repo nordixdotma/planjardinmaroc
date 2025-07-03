@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -22,8 +22,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet" />
+        <meta name="google" content="notranslate" />
+        <meta httpEquiv="Content-Language" content="fr" />
       </head>
-      <body>{children}</body>
+      <body translate="no">{children}</body>
     </html>
   )
 }
